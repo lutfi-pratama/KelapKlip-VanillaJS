@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(46, 46, 46);
+  height: 100vh;
+}
+
+/* Lamp Color */
+.lamp--red {
+  background-color: red;
+}
+
+.lamp--blue {
+  background-color: blue;
+}
+
+.lamp--green {
+  background-color: rgb(7, 164, 7);
+}
+/* End lamp color */
+
+/* Lamp */
+.lamp__container {
+  margin: 0 auto;
+  width: 90%;
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lamp__item {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100px;
+}
+/* End lamp */
+
+/* Control Panel */
+.control__container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.control__on {
+  background-color: gainsboro;
+}
+.control__on:hover {
+  background-color: rgb(74, 208, 74);
+}
+.on--active {
+  background-color: rgb(74, 208, 74) !important;
+}
+.on--deactive {
+  background-color: gainsboro;
+}
+
+.control__off {
+  background-color: rgb(255, 62, 62);
+}
+.control__off:hover {
+  background-color: rgb(255, 62, 62);
+}
+.off--active {
+  background-color: rgb(255, 62, 62) !important;
+}
+.off--deactive {
+  background-color: gainsboro;
+}
+
+.button--rounded {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+}
+
+.slider__container {
+  width: 30%;
+}
+
+.slider__item {
+  transform: rotateY(180deg);
+  appearance: none;
+  border-radius: 20px;
+  background: #f5f3f3;
+  outline: none;
+  height: 10px;
+  width: 100%;
+}
+/* End */
+
+/* Keyframe */
+@keyframes red--animated {
+  0% {
+    background-color: red;
+  }
+  50% {
+    box-shadow: 0px 0px 40px 20px red;
+  }
+  100% {
+  }
+}
+@keyframes blue--animated {
+  0% {
+    background-color: blue;
+  }
+  50% {
+    box-shadow: 0px 0px 40px 20px blue;
+  }
+  100% {
+  }
+}
+@keyframes green--animated {
+  0% {
+    background-color: rgb(7, 164, 7);
+  }
+  50% {
+    box-shadow: 0px 0px 40px 20px rgb(7, 164, 7);
+  }
+  100% {
+  }
+}
+
+/* Odd */
+@keyframes red--animated--odd {
+  0% {
+    box-shadow: 0px 0px 40px 20px red;
+  }
+  50% {
+    box-shadow: 0px 0px 0px 0px red;
+  }
+  100% {
+    box-shadow: 0px 0px 40px 20px red;
+  }
+}
+@keyframes blue--animated--odd {
+  0% {
+    box-shadow: 0px 0px 40px 20px blue;
+  }
+  50% {
+    box-shadow: 0px 0px 0px 0px blue;
+  }
+  100% {
+    box-shadow: 0px 0px 40px 20px blue;
+  }
+}
+@keyframes green--animated--odd {
+  0% {
+    box-shadow: 0px 0px 40px 20px rgb(7, 164, 7);
+  }
+  50% {
+    box-shadow: 0px 0px 0px 0px rgb(7, 164, 7);
+  }
+  100% {
+    box-shadow: 0px 0px 40px 20px rgb(7, 164, 7);
+  }
+}

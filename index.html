@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kelap Kelip</title>
+  </head>
+  <body>
+    <div class="lamp__container">
+      <div class="lamp__item lamp--red"></div>
+      <div class="lamp__item lamp--blue"></div>
+      <div class="lamp__item lamp--green"></div>
+      <div class="lamp__item lamp--red"></div>
+      <div class="lamp__item lamp--blue"></div>
+      <div class="lamp__item lamp--green"></div>
+      <div class="lamp__item lamp--red"></div>
+      <div class="lamp__item lamp--blue"></div>
+      <div class="lamp__item lamp--green"></div>
+      <div class="lamp__item lamp--red"></div>
+      <div class="lamp__item lamp--blue"></div>
+      <div class="lamp__item lamp--green"></div>
+    </div>
+
+    <div class="control__container">
+      <button class="control__on button--rounded" onclick="handleOn()">
+        ON
+      </button>
+      <button class="control__off button--rounded" onclick="handleOff()">
+        OFF
+      </button>
+      <div class="slider__container">
+        <input
+          type="range"
+          min="200"
+          max="2000"
+          value="1100"
+          class="slider__item"
+          id="SpeedRange"
+        />
+      </div>
+    </div>
+  </body>
+
+  <script src="app.js"></script>
+</html>
